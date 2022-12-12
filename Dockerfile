@@ -18,8 +18,8 @@ COPY entrypoint.sh /entrypoint.sh
 # COPY testing.sh /testing.sh
 # RUN chmod u+x /testing.sh
 
-COPY detect.sh /detect.sh
-RUN chmod u+x /detect.sh
+# COPY detect.sh /detect.sh
+RUN chmod u+x detect.sh
 # RUN chmod u+x /entrypoint.sh
 
 # Define Docker Image entrypoint
