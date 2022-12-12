@@ -2,7 +2,7 @@
 name: 'Black Duck Scan'
 description: 'Run black duck scan'
 inputs:
-  test-args:
+  input-args:
     description: 'input options'
     required: true
     default: '-h'
