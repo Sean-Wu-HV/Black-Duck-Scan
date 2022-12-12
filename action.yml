@@ -1,0 +1,14 @@
+# action.yml
+name: 'Black Duck Scan'
+description: 'Run black duck scan'
+inputs:
+  test-args:
+    description: 'input options'
+    required: true
+    default: '-h'
+    type: string
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.input-args }}
