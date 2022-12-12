@@ -14,6 +14,7 @@ ENV BDS_JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 # Download Detect jar
 RUN curl -O https://detect.synopsys.com/detect.sh
 RUN chmod u+x detect.sh
+RUN chmod u+x entrypoint.sh
 COPY entrypoint.sh /entrypoint.sh
 
 # Define Docker Image entrypoint
