@@ -12,7 +12,7 @@ RUN apk --no-cache add openjdk11-jre
 ENV BDS_JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
 # Download Detect jar
-RUN curl -O https://detect.synopsys.com/detect.sh
+RUN curl -O https://detect.synopsys.com/detect8.sh
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod u+x /entrypoint.sh
@@ -21,7 +21,7 @@ RUN chmod u+x /entrypoint.sh
 # RUN chmod u+x /testing.sh
 
 # COPY detect.sh /detect.sh
-RUN chmod u+x detect.sh
+RUN chmod u+x detect8.sh
 # RUN chmod u+x /entrypoint.sh
 
 # Define Docker Image entrypoint
