@@ -3,4 +3,4 @@
 # fail script if error
 set -eo pipefail
 
-/./detect.sh $@
+/./detect8.sh $@
