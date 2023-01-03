@@ -9,6 +9,6 @@ inputs:
     type: string
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker.repo.orl.eng.hitachivantara.com/security-scan/blackduck-dind'
   args:
     - ${{ inputs.input-args }}
